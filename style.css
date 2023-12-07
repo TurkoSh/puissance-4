@@ -1,0 +1,230 @@
+body {
+  background-color:rgb(50, 51, 51);
+  text-align: center;
+  z-index: 50;
+  font-weight: bold;
+}
+header {
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.884);
+  border: solid 3px rgba(255, 255, 255, 0.801);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+header div {
+  padding: 5px;
+  margin: 5px;
+}
+
+#currentPlayer {
+  font-size: 18px;
+}
+
+.gamesection {
+  display: flex;
+  justify-content: space-around;
+}
+
+#infogame {
+  padding: 3%; 
+}
+
+.align {
+  width: 25%;
+}
+
+#game {
+  display: inline-block;
+  text-align: center;
+  z-index: 1000;
+  background-color: rgb(17, 0, 255);
+  margin: 10px;
+  border: solid 3px black;
+  border-radius: 2%; 
+}
+
+#scoreinfo {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.781);
+}
+
+#scoreinfo div{
+  width: 50%;
+  height: 100%;
+  border: solid 3px darkblue;
+}
+
+#playerlist {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(4, 4, 192);
+}
+
+#playerlist div{
+  width: 50%;
+  height: 100%;
+  border: solid 3px darkblue;
+}
+
+.cell {
+  z-index: 200;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(223, 223, 204);
+  margin: 10px;
+  display: inline-block;
+  border: solid 3px darkblue;
+}
+
+#joueur1
+{
+  color: rgb(221, 17, 17);
+}
+
+#joueur2
+{
+  color: rgb(228, 207, 23);
+}
+
+#grayBack 
+{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   z-index: 1999;
+   opacity: 0.5;
+}
+
+#customPopup 
+{
+   position: fixed;
+   display: none;
+   left: 33.75%;
+   top: 20%;
+   z-index: 2000;
+   padding: 20px;
+   width: 560px;
+   height: 400px;
+   background: rgba(253, 253, 250, 0.959);
+   font-size: 30px;
+   line-height: 16px;
+   color: #202020;
+   border : 3px outset #555555;
+}
+
+#StartScreen 
+{
+   position: fixed;
+   display: none;
+   left: 33.75%;
+   top: 20%;
+   z-index: 2000;
+   padding: 20px;
+   width: 600px;
+   background: rgba(255, 255, 255, 0.959);
+   font-size: 20px;
+   line-height: 16px;
+   color: #202020;
+   border : 3px outset #555555;
+}
+
+#nullPopup 
+{
+   position: fixed;
+   display: none;
+   left: 33.75%;
+   top: 20%;
+   z-index: 2000;
+   padding: 20px;
+   width: 600px;
+   background: rgba(253, 253, 250, 0.959);
+   font-size: 20px;
+   line-height: 16px;
+   color: #202020;
+   border : 3px outset #555555;
+}
+
+.namediv {
+  padding: 25px;
+  margin: 25px;
+}
+
+.inname {
+  margin: 25px;
+  padding: 10px;
+  border-bottom: solid 4px darkblue;
+  border-radius: 5%;
+}
+
+.vicmes {
+  margin: 25px;
+  padding: 10px;
+  border-bottom: solid 4px darkblue;
+  border-radius: 5%;
+}
+
+#startGame {
+  width: 300px;
+  height: 80px;
+  font-size: 35px;
+  background: rgba(0, 0, 158, 0.945);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+
+#validwin {
+  width: 300px;
+  height: 80px;
+  font-size: 35px;
+  background: rgba(3, 3, 148, 0.911);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+
+#validnull {
+  width: 300px;
+  height: 80px;
+  font-size: 35px;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+
+#annuler {
+  width: 300px;
+  height: 80px;
+  font-size: 35px;
+  background: rgb(190, 8, 8);
+  border-radius: 8px;
+  border: solid 3px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#restart {
+  width: 300px;
+  height: 80px;
+  font-size: 35px;
+  background: rgba(27, 27, 194, 0.541);
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+}
+
+#animCell {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: solid 3px darkblue;
+  z-index: 300;
+}
+
+.but{
+  margin: 30px;
+}
+

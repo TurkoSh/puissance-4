@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="son.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="son.js" defer></script>
+
+    <title>Puissance 4</title>
+</head>
+
+<body>
+    <button id="play-btn">
+        <i class="fa-regular fa-music"></i>
+    </button>
+    <audio id="myAudio">
+        <source src="aaaaaaaaaaaaaaaa.mp3" type="audio/mpeg">
+    </audio>
+    <div id="customPopup">
+        <div class="vicmes">
+            <h3>VICTOIRE</h3>
+        </div>
+        <div class="vicmes">
+            <p id="VicPlayer">Message du popup !</p>
+        </div>
+        <div><input id="validwin" type="button" value="NEW GAME"></div>
+    </div>
+    <div id="nullPopup">
+        <h3>MATCH NULL</h3>
+        <p>JOUEZ MIEUX LA PROCHAINE FOIS</p>
+        <input id="validnull" type="button" value="NEW GAME">
+    </div>
+    <div id="StartScreen">
+        <h3>Entrez le nom des Joueurs</h3>
+        <div class="namediv">
+            <div class="inname">
+                <p>Joueur 1</p>
+                <input id="P1name" type=text placeholder="Joueur1">
+            </div>
+            <div class="inname">
+                <p>Joueur 2</p>
+                <input id="P2name" type=text placeholder="Joueur2">
+            </div>
+        </div>
+        <div>
+            <input id="startGame" type="button" value="START">
+        </div>
+    </div>
+    <header>
+        <div>
+            <h1>Puissance 4</h1>
+        </div>
+        <div id="currentPlayer">Joueur ??</div>
+        <div id="error"></div>
+    </header>
+    <section class="gamesection">
+        <div class="align">
+            <div id="infogame">
+                <div id="scoreinfo">
+                    <div>
+                        <h3>Joueurs</h3>
+                    </div>
+                    <div>
+                        <h3>Scores</h3>
+                    </div>
+                </div>
+                <div id="playerlist">
+                    <div>
+                        <p id="joueur1">Joueur 1</p>
+                        <p id="joueur2">Joueur 2</p>
+                    </div>
+                    <div>
+                        <p id="score1">0</p>
+                        <p id="score2">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="game">
+        </div>
+        <div class="align">
+            <div id="gamebutton">
+                <div class="but">
+                    <input id="annuler" type="button" value="ANNULER">
+                </div>
+                <div class="but">
+                    <input id="restart" type="button" value="RESTART">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="p4.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(function () {
+            $('#game').p4({
+            });
+        });
+    </script>
+
+</body>
+
+</html>
